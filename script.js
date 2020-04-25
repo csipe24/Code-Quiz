@@ -1,13 +1,7 @@
-#Things Needed in Code 
+var totalTime =
+var timeElapsed =
 
-Variables
-
--Start time / Total Seconds 
-var startTime = 75;
-
--Elapsed time
-var elapsedTime= 0;
-
+var startBUtton = document.getElementbyID("start-button)
 
 
 
@@ -20,9 +14,7 @@ var elapsedTime= 0;
     -Correct answers Object
 
 
-HTML Elements
-Start Button
-var startBUtton = document.getElementbyID("start-button)
+
 
 Form/Input to allow us to add our initials
 
@@ -125,3 +117,69 @@ Inside which HTML element do we put the JavaScript?
 -<body>
 -<head>
 
+
+
+// List objects/questions here
+var question 1
+
+// Create your HTML Page via DOM Methods here!
+
+
+var title1 =document.createElement("h1");
+
+var title2 =document.createElement("h2");
+
+title1.textContent = "Look Ma No Html";
+
+title2.textContent = "Look Ma No Html";
+
+title1.style.textAlign = "Center"
+title2.style.textAlign = "Center"
+
+document.body.appendChild(title1);
+
+document.body.appendChild(title2);
+
+
+var img = document.createElement("img")
+img.setAttribute("style", "text-align: Center");
+img.setAttribute("src", "https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/33922223_2254250114602064_5631931250206834688_n.jpg?_nc_cat=108&_nc_sid=85a577&_nc_ohc=SknWiMUoJL4AX_h-Oue&_nc_ht=scontent-sea1-1.xx&oh=38bf71a1e514e53384f7cae48938354a&oe=5EBD4AB4");
+img.style.width ="300px"
+img.style.height ="300px"
+img.style.display = "block"
+img.style.justifyContent ="Center"
+document.body.appendChild(img);
+
+var caption =document.createElement("cap");
+caption.textContent = "This is me";
+caption.style.justifyContent= "center"
+document.body.appendChild(caption);
+
+
+// * A centered image, with a center caption under it.
+
+// * A list of your favorite foods (or some other list of favorites).
+
+// * Some extra styling to all elements.
+
+// <div class="row">
+// <div class="col-md-8">
+// <form>
+//   <div class="form-group">
+//     <label for="contactName">Name</label>
+//     <input type="name" class="form-control" id="nameInput1" placeholder="Will Smith">
+//   </div>
+//   <div class="form-group">
+//     <label for="emailAddress">Email</label>
+//     <input type="password" class="form-control" id="emailInput1" placeholder="Freshprince@belair.com">
+//   </div>
+//   <div class="form-group">
+//       <label for="Message">Message</label>
+//       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+//     </div>
+
+    
+//   <button type="button" class="btn btn-secondary">Submit</button>
+// </form>
+// </div>
+// </div>
