@@ -15,7 +15,7 @@
   <div id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Restart </a>
+        <a class="nav-link" id="restart" href="index.html">Restart </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id="timerLeftText" >Time Left:<span class="sr-only">(current)</span></a>
@@ -31,39 +31,49 @@
     <h1 class="display-12">Welcome to my Coding Quiz!</h1>
     <h3 class="display-12"> Try to beat my highscore!</h3>
     <div class="d-flex justify-content-center">
-    <a class="btn btn-secondary btn-sm" id="start-button" role="button">Start</a>
+    <a class="btn btn-secondary btn-lg" id="start-button" role="button">Start</a>
     </div>
   </div>
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-10" >Question Number - <h1 id="questionNumber"> </h1></h1>
+  <div class="jumbotron jumbotron-fluid" >
+    <div class="container" id="choicesEl" >
+     <p id="questionNumber"></p>
       <h3 class="display-8" id="question">Question</h3>
       <div class="d-flex flex-column">
-      <a class="btn btn-secondary btn-lg my-2" id="response-1"  role="button">Answer 1</a>
-      <a class="btn btn-secondary btn-lg my=2" id="response-2"  role="button">Answer 2</a>
-      <a class="btn btn-secondary btn-lg my-2" id="response-3"  role="button">Answer 3</a>
-      <a class="btn btn-secondary btn-lg" id="response-4" role="button">Answer 4</a>
+      <a class="btn btn-secondary btn-md my-2" id="response-1"  role="button">Answer 1</a>
+      <a class="btn btn-secondary btn-md my=2" id="response-2"  role="button">Answer 2</a>
+      <a class="btn btn-secondary btn-md my-2" id="response-3"  role="button">Answer 3</a>
+      <a class="btn btn-secondary btn-md" id="response-4" role="button">Answer 4</a>
       </div>
     </div>
   </div>
 
 <br>
-<div class="container" id="submit-form">
+<div class="container">
 <form>
+  <h1>Submit Your Highscore Here!</h1>
   <div class="form-group">
     <label for="initials">First & Last Initials</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="C.S.">
+    <input type="text" class="form-control" id="initials"  placeholder="C.S.">
      </div>
   <div class="form-group">
     <label for="score">Score: </label>
-    <input class="form-control" id="score">
+    <p class="form-control" id="score">
   </div>
-  <button type="submit" class="btn btn-secondary">Submit</button>
+  <button id="submit" class="btn btn-secondary">Submit</button>
+<br>
 </form>
 </div>
 
-  <script src="./script.js"></script>
+<div class="container">
+<h1 class= "d-flex justify-content-center">Highscores:</h1>
+<p class= "d-flex justify-content-center" >Initials:</p>
+<p class= "d-flex justify-content-center" id="hsinitials"></p>
+<p class= "d-flex justify-content-center">Score:</p>
+<p class= "d-flex justify-content-center" id="hsscore"></p>
+</div>
+
+<script src="./script.js"></script>
 </main>
 
 <footer>

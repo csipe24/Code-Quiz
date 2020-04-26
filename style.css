@@ -37,7 +37,12 @@ body{
     text-align: center;
 }
 
-.jumbotron .btn {
+.jumbotron .btn-md {
+    background-color: rgba(64, 224, 208, 0.445);
+    display: none;
+}
+
+.jumbotron .btn-lg {
     background-color: rgba(64, 224, 208, 0.445);
 }
 
@@ -45,6 +50,10 @@ form{
     display: none;
 }
 
+#restart{
+display:none;
+color: red;
+}
 /* Footer */
 footer{
     text-align: center;
