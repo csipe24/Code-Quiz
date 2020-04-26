@@ -1,35 +1,3 @@
-#Things Needed in Code 
-
-Variables
-
--Start time / Total Seconds 
-var startTime = 75;
-
--Elapsed time
-var elapsedTime= 0;
-
-
-
-
--Questions -List or Array
-
-    -Questions Object
-
-    -List of possible answers Object
-
-    -Correct answers Object
-
-
-HTML Elements
-Start Button
-var startBUtton = document.getElementbyID("start-button)
-
-Form/Input to allow us to add our initials
-
-Buttons for each answer
-
-Current time HTML
-
 #Things my code needs to do
 Start time upon hitting start button
 
@@ -53,7 +21,6 @@ Check if elapsedTime = totalTime
 Update time left # in innerhtml
 
 
-
 End game
 Display score
 Provide an input to enter initials
@@ -69,12 +36,26 @@ Clicking the start button addeventlistener to start function
 Clicking an answer to validation (another function)
 
 
-
 Remember to clear out html then add
 
 
+# Password-Generator
+Homework Assignment #3
 
-# 04 Web APIs: Code Quiz
+Our password generator is a great tool if you would like a random password created with a spesific length and certain types of characters! Once you confirm which kinds of characters you would like in your password, the generator will take those groups of characters and randomly pick the password including at least 1 of each type of selected character. Please note the minumum password length is 8 characters!
+
+If you do not prompt a password length equal or longer than 8 characters our HTML will prompt you to enter another password length.
+
+Our password generator operates in your web browser!
+
+![picture](Preview.jpg)
+
+
+Built With
+Microsoft Visual Studio Code
+
+Authors
+Christopher Sipe - UW Coding Bootcamp Student
 
 As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
@@ -124,4 +105,98 @@ Inside which HTML element do we put the JavaScript?
 -<script>
 -<body>
 -<head>
+
+
+
+// List objects/questions here
+var question 1
+
+// Create your HTML Page via DOM Methods here!
+
+
+var title1 =document.createElement("h1");
+
+var title2 =document.createElement("h2");
+
+title1.textContent = "Look Ma No Html";
+
+title2.textContent = "Look Ma No Html";
+
+title1.style.textAlign = "Center"
+title2.style.textAlign = "Center"
+
+document.body.appendChild(title1);
+
+document.body.appendChild(title2);
+
+
+var img = document.createElement("img")
+img.setAttribute("style", "text-align: Center");
+img.setAttribute("src", "https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/33922223_2254250114602064_5631931250206834688_n.jpg?_nc_cat=108&_nc_sid=85a577&_nc_ohc=SknWiMUoJL4AX_h-Oue&_nc_ht=scontent-sea1-1.xx&oh=38bf71a1e514e53384f7cae48938354a&oe=5EBD4AB4");
+img.style.width ="300px"
+img.style.height ="300px"
+img.style.display = "block"
+img.style.justifyContent ="Center"
+document.body.appendChild(img);
+
+var caption =document.createElement("cap");
+caption.textContent = "This is me";
+caption.style.justifyContent= "center"
+document.body.appendChild(caption);
+
+
+// * A centered image, with a center caption under it.
+
+// * A list of your favorite foods (or some other list of favorites).
+
+// * Some extra styling to all elements.
+
+// <div class="row">
+// <div class="col-md-8">
+// <form>
+//   <div class="form-group">
+//     <label for="contactName">Name</label>
+//     <input type="name" class="form-control" id="nameInput1" placeholder="Will Smith">
+//   </div>
+//   <div class="form-group">
+//     <label for="emailAddress">Email</label>
+//     <input type="password" class="form-control" id="emailInput1" placeholder="Freshprince@belair.com">
+//   </div>
+//   <div class="form-group">
+//       <label for="Message">Message</label>
+//       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+//     </div>
+
+    
+//   <button type="button" class="btn btn-secondary">Submit</button>
+// </form>
+// </div>
+// </div>
+
+function begin(){
+timer.text("60")
+
+setTime()
+
+
+Correct answer
+onclick function
+
+if else statmenet
+
+}
+
+
+
+function submit(){
+document.getElementById(form).addEventListener
+event.preventDefault
+localStorage.setItem("Initials", userinitials.value);
+localStorage.setItem("score", score.value)
+
+clearInterval(myInterval)
+displayScore.innerHTML = ("Your Score " + score)
+}
+
+
 
