@@ -8,9 +8,9 @@ var timeLeft = 80;
 var highScoreFormEl =$("form"),
     score =$("#score");
     submit =$("#submit");
-    initialSub =$("#initials");
-    hsInitials =$("#hsinitials");
-    hsscore =$("#hsscore");
+    initialsInput =document.querySelector("#initialsInput"),
+    initialsSpan = document.querySelector("#initialsSpan");
+    scoreSpan= document.querySelector("#scoreSpan");
 
 
 // Button Variables
@@ -157,22 +157,32 @@ $(choiceBtn).on( 'click', function( event ) {
 // Submit Highscore
 $(submit).on( 'click', function( event ) {
     event.preventDefault();
-    console.log("prevent default");
-    console.log(this.value);
-    
-    localStorage.setItem("Initials", JSON.stringify(initialSub));
-    console.log(JSON.parse(localStorage.getItem("Initials")));
+var initials = document.querySelector("#initials").value;
 
-    // $(initialSub).html(localStorage.setItem);
+// var score = highScore
+localStorage.setItem("initials", JSON.stringify(initials));
+// localStorage.setItem("score", JSON.stringify(highScore));
 
-    // $(score).html(localStorage.setItem);
+    console.log(initials);
 
-    // $(hsInitials).html("localStorage.getItem");
-    // $(hsscore).text(localStorage.getItem);
+    // console.log(highScore);
 
     $(startBtn).show();
-    console.log("test");
+    console.log("IS MY CODE RUNNING");
+    // renderHighscore();
 });
+// // Render Highscore
+// function renderHighscore(){
+    // var initials = localStorage.getItem("initials");
+    // var highScore = localStorage.getItem("highScore")
 
+// if (initials && highScore === null) {
+//     return;
+//   }
 
-// Add media quieres
+//   initials=.textcontent;
+//   passwork = .textcontent;
+
+// }
+
+// Add media querys
