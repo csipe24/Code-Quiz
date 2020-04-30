@@ -4,13 +4,15 @@ var score = 0
 var timeLeft = 80;
     timerEl = $("#timerLeft");
 
+renderHighscore();
+
 // Form Variables
 var highScoreFormEl =$("form"),
-    score =$("#score");
+    scoreEl =$("#score");
     submit =$("#submit");
-    initialsInput =document.querySelector("#initialsInput"),
+    initialsInput =$("#initialsInput"),
     initialsSpan = document.querySelector("#initialsSpan");
-    scoreSpan= document.querySelector("#scoreSpan");
+    highScoreSpan= document.querySelector("#highScoreSpan");
 
 
 // Button Variables
@@ -84,7 +86,8 @@ function startTime(){
         };
 
         if (questionIndex > 4){
-        timeLeft = score;
+        console.log(timeLeft);
+        $("#score").text(timeLeft);
         clearInterval(timerInterval);
         return};
         
@@ -112,10 +115,8 @@ function clearQuestion(){
     $(choicesEl).hide("");
 };
 
-
 function submitHighScore(){
     $(highScoreFormEl).show();
-    $(score).text(timeLeft);
 };
 
 // Start Button JS
@@ -157,32 +158,25 @@ $(choiceBtn).on( 'click', function( event ) {
 // Submit Highscore
 $(submit).on( 'click', function( event ) {
     event.preventDefault();
-var initials = document.querySelector("#initials").value;
-
-// var score = highScore
-localStorage.setItem("initials", JSON.stringify(initials));
-// localStorage.setItem("score", JSON.stringify(highScore));
-
-    console.log(initials);
-
-    // console.log(highScore);
-
     $(startBtn).show();
-    console.log("IS MY CODE RUNNING");
-    // renderHighscore();
+    
+    var initials =document.querySelector("#initialsInput").value;
+    console.log(initials);
+    localStorage.setItem("initials", initials);
+
+    localStorage.setItem("score", timeLeft);
+
+    renderHighscore();
 });
-// // Render Highscore
-// function renderHighscore(){
-    // var initials = localStorage.getItem("initials");
-    // var highScore = localStorage.getItem("highScore")
+// Render Highscore
+function renderHighscore(){
+    var initials = localStorage.getItem("initials");
+    var highScore = localStorage.getItem("score")
 
-// if (initials && highScore === null) {
-//     return;
-//   }
+if (initials && highScore === null) {
+    return;
+  }
+  initialsSpan.textContent = initials
+  highScoreSpan.textContent = highScore
 
-//   initials=.textcontent;
-//   passwork = .textcontent;
-
-// }
-
-// Add media querys
+};

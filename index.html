@@ -52,13 +52,13 @@
 <div class="container">
 <form>
   <h1>Submit Your Highscore Here!</h1>
-  <div class="input-group">
+  <div class="form-group">
     <label for="initials">First & Last Initials</label>
-    <input type="text"  id="initialsInput" name="initials"  placeholder="C.S.">
+    <input type="text" class="form-control" id="initialsInput" name="initials"  placeholder="C.S.">
      </div>
-  <div class="input-group">
+  <div class="form-group">
     <label for="score">Score: </label>
-    <input type="text" id="score">
+    <p type="number" id="score">
   </div>
   <button id="submit" class="btn btn-secondary">Submit</button>
 <br>
@@ -66,9 +66,9 @@
 </div>
 
 <div class="card">
-<h1 class= "d-flex justify-content-center">Highscores:</h1>
+<h1 class= "d-flex justify-content-center">Last Highscore</h1>
 <p class= "d-flex justify-content-center" >Initials: <span id="initialsSpan"></span></p>
-<p class= "d-flex justify-content-center">Score:<span id="highScoreSpan"></span></p></p>
+<p class= "d-flex justify-content-center">Score:  <span id="highScoreSpan"></span></p></p>
 </div>
 
 <script src="./script.js"></script>
