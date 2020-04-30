@@ -12,7 +12,7 @@ If you do not finish the questions before time is up then you lose and will not 
 
 Our password generator operates in your web browser!
 
-![picture](Preview.jpg)
+![picture](assets/preview.jpg)
 
 
 Built With
